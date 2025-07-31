@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Frosted Noir Palette - Light */
+    --background: 220 16% 96%; /* frosted glass gray */
+    --foreground: 222 47% 11%; /* noir text */
+    --card: 220 16% 98%;
+    --card-foreground: 222 47% 11%;
+    --popover: 220 16% 98%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 222 47% 11%; /* noir */
+    --primary-foreground: 220 16% 96%;
+    --secondary: 210 16% 85%; /* frosted blue gray */
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 16% 90%;
+    --muted-foreground: 222 20% 40%;
+    --accent: 200 100% 80%; /* frosted blue accent */
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 80% 60%;
+    --destructive-foreground: 220 16% 96%;
+    --border: 220 16% 85%;
+    --input: 220 16% 85%;
+    --ring: 200 100% 80%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Frosted Noir Palette - Dark */
+    --background: 222 47% 11%; /* noir */
+    --foreground: 220 16% 96%; /* frosted text */
+    --card: 222 47% 13%;
+    --card-foreground: 220 16% 96%;
+    --popover: 222 47% 13%;
+    --popover-foreground: 220 16% 96%;
+    --primary: 220 16% 96%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 210 16% 25%; /* frosted blue gray dark */
+    --secondary-foreground: 220 16% 96%;
+    --muted: 210 16% 20%;
+    --muted-foreground: 220 16% 70%;
+    --accent: 200 100% 60%; /* frosted blue accent dark */
+    --accent-foreground: 220 16% 96%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 220 16% 96%;
+    --border: 222 20% 20%;
+    --input: 222 20% 20%;
+    --ring: 200 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
